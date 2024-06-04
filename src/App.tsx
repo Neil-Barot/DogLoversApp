@@ -1,17 +1,13 @@
-/*import React from 'react';
+import React from 'react';
 import { View, Text, TextInput, Button, StyleSheet, SafeAreaView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import RootStack from './navigation/RootStack';
 
 const App = () => {
   return (
-    //<NavigationContainer>
-      //<RootStack />
-    //</NavigationContainer>
-
-    <SafeAreaView style={styles.container}>
-          <Text style={styles.text}>Hello World</Text>
-        </SafeAreaView>
+    <NavigationContainer>
+      <RootStack/>
+    </NavigationContainer>
   );
 };
 
@@ -27,8 +23,9 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;*/
+export default App;
 
+/*
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 //import { useNavigation } from '@react-navigation/native';
@@ -102,3 +99,4 @@ const styles = StyleSheet.create({
   });
 
   export default App;
+*/
