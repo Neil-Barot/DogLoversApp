@@ -7,9 +7,9 @@ const App = () => {
   console.log("App log works")
 
   return (
-    <NavigationContainer>
+    
       <RootStack/>
-    </NavigationContainer>
+    
   );
 };
 
