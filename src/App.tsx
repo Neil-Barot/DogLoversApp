@@ -4,6 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import RootStack from './navigation/RootStack';
 
 const App = () => {
+  console.log("App log works")
+
   return (
     <NavigationContainer>
       <RootStack/>

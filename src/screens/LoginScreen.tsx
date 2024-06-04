@@ -9,7 +9,10 @@ const LoginScreen = () => {
     const [password, setPassword] = useState('')
     const navigation = useNavigation();
 
+    console.log("Login screen test 1");
+
     const handleLogin = async () => {
+      console.log("Attempting Login");
         const { error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) {
           console.log('Error logging in:', error.message);
@@ -37,7 +40,7 @@ const LoginScreen = () => {
                 onChangeText={setPassword}
                 secureTextEntry
             />
-            <Button title="Login" onPress={() => {handleLogin}} />
+            <Button title="Login" onPress={handleLogin} />
             <Button
                 title="Go to Signup"
                 //onPress={() => navigation.navigate('Signup')} //Uncomment when you add signup
