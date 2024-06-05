@@ -17,7 +17,8 @@ const LoginScreen = () => {
           console.log('Error logging in:', error.message);
         } else {
           console.log('Login successful');
-          navigation.navigate('VideoFeed'); 
+          navigation.navigate('VideoFeed');
+          //navigation.navigate('UploadVideo'); // Just to test functionality
         }
       };
       
