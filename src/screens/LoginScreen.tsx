@@ -17,8 +17,7 @@ const LoginScreen = () => {
           console.log('Error logging in:', error.message);
         } else {
           console.log('Login successful');
-          // Navigate to home screen or show a welcome message
-          navigation.navigate('Home'); // Make sure to have 'Home' screen in your navigation. Uncomment later
+          navigation.navigate('VideoFeed'); 
         }
       };
       
@@ -42,7 +41,7 @@ const LoginScreen = () => {
             <Button title="Login" onPress={handleLogin} />
             <Button
                 title="Go to Signup"
-                onPress={() => navigation.navigate('Signup')} //Uncomment when you add signup
+                onPress={() => navigation.navigate('Signup')} 
             />
         </View>
 
